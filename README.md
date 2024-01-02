@@ -38,7 +38,7 @@ Most effective hyperparameters:
 
 ## Observed Results
 
-### Training Data Results
+#### Training Data Results
 Overall Accuracy: 99.27%
 | | COVID-19 | Normal | Pneumonia | Tuberculosis |
 | --------- | --------- | --------- | --------- | --------- |
@@ -46,7 +46,7 @@ Overall Accuracy: 99.27%
 | recall | 0.976087 | 0.985086 | 0.997161 | 0.993846 |
 | f-1 score | 0.981421 | 0.989513 | 0.995235 | 0.992320 |
 
-### Testing Data Results
+#### Testing Data Results
 Overall Accuracy: 99.62%
 | | COVID-19 | Normal | Pneumonia | Tuberculosis |
 | --------- | --------- | --------- | --------- | --------- |
