@@ -9,7 +9,7 @@ Medical imaging is an indispensable component of modern healthcare. In particula
 During preprocessing, my team segregated images into folders containing like-classifications, standardized image dimensions and orientations, converted all images into grayscale, and flattened images into a workable format based on pixel values.
 
 ### Autoeconders 
-Autoencoders, a prevalent method for compression in medical imaging [**[3]**](#ref6), consists of neural networks that encode input images into a lower-dimensional representation and reconstruct the image from this compressed form, aiming to retain key features while minimizing reconstruction error.
+Autoencoders, a prevalent method for compression in medical imaging [**[3]**](#ref3), consists of neural networks that encode input images into a lower-dimensional representation and reconstruct the image from this compressed form, aiming to retain key features while minimizing reconstruction error.
 
 The encoder consists of three blocks that map the initial image to a lower dimensional representation, and the decoder consists of three blocks that map the image back to the original dimensions by reversing the transformations during encoding.
 
@@ -26,7 +26,7 @@ Some details on training:
 - We used the Adam optimizer with 0.001 learning rate, and batch sizes of 4, 8, 16 and 32 (all with similar performance)
 
 ### Support Vector Machine (SVM)
-A widely accepted technique for medical image classification [4], I used a SVM to classify the reconstructed images. My team experimented with utilizing Convolutional Neural Networks (CNN) to classify images; however, SVM was able to outperform CNN in both accuracy and efficiency. 
+A widely accepted technique for medical image classification [**[4]**](#ref4), I used a SVM to classify the reconstructed images. My team experimented with utilizing Convolutional Neural Networks (CNN) to classify images; however, SVM was able to outperform CNN in both accuracy and efficiency. 
 
 I used GridSearchCV and C-Support Vector Classification (SVC) with 3 kernel types, multiple degrees for polynomial kernels, and multiple coefficients to determine the best blend of hyperparameters to classify the images. 
 
@@ -61,6 +61,6 @@ Per the results, our model produces incredible accuracy and minimizes false nega
 
 <a id="ref2"></a> [2] Kaggle Dataset: "Chest X-ray - Pneumonia, COVID-19, Tuberculosis." Retrieved from https://www.kaggle.com/datasets/jtiptj/chest-xray-pneumoniacovid19tuberculosis
 
-<a id="ref6"></a> [3] Maier, A., Syben, C., Lasser, T., & Riess, C. (2019). A gentle introduction to deep learning in medical image processing. Zeitschrift für Medizinische Physik, 29(2), 86-101. 
+<a id="ref3"></a> [3] Maier, A., Syben, C., Lasser, T., & Riess, C. (2019). A gentle introduction to deep learning in medical image processing. Zeitschrift für Medizinische Physik, 29(2), 86-101. 
 
-<a id="ref8"></a> [4] E. Miranda, M. Aryuni and E. Irwansyah, "A survey of medical image classification techniques," 2016 International Conference on Information Management and Technology (ICIMTech), 2016, pp. 56-61.
+<a id="ref4"></a> [4] E. Miranda, M. Aryuni and E. Irwansyah, "A survey of medical image classification techniques," 2016 International Conference on Information Management and Technology (ICIMTech), 2016, pp. 56-61.
