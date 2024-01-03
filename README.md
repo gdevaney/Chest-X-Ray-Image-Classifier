@@ -56,6 +56,24 @@ Overall Accuracy: 99.62%
 
 Per the results, our model produces incredible accuracy and minimizes false negative results as observed through an excellent recall score for Normal labelled images. We also minimized overfitting training data by improving accuracy in testing results. 
 
+## Folders
+#### Data
+- Original data divided into subfolders of train, test, validation and further divided by label (COVID-19, Normal, Pneumonia, Tuberculosis)
+#### Data_processed
+- Standardized data reduced to uniform size, retains the same folder structure as ./Data folder
+#### Data_compressed
+- Compressed and reconstructed data utilizing autoencoder, retains the original folder structure
+#### Autoencoder
+- Contains files used for image compression and preprocessing utilizing a convolutional autoencoder
+#### trained_models
+- Contains the autoencoder model created for image compression
+#### utils
+- Utility scripts used to navigate file paths and conduct image preprocessing
+
+## Files
+#### Chest X-Ray Image Classifier
+- Performs classification on compressed images and displays results
+
 ## References:
 <a id="ref1"></a> [1] Faden, H., & El-Sharif, N. (2019). The global and regional prevalence of community-acquired pneumonia in children under five in 2010. InTechOpen.
 
