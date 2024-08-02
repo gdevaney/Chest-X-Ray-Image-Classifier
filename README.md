@@ -44,7 +44,7 @@ Overall Accuracy: 99.27%
 | --------- | --------- | --------- | --------- | --------- |
 | precision | 0.986813 | 0.993980 | 0.993316 | 0.990798 |
 | recall | 0.976087 | 0.985086 | 0.997161 | 0.993846 |
-| f-1 score | 0.981421 | 0.989513 | 0.995235 | 0.992320 |
+| F1 score | 0.981421 | 0.989513 | 0.995235 | 0.992320 |
 
 #### Testing Data Results
 Overall Accuracy: 99.62%
@@ -52,7 +52,7 @@ Overall Accuracy: 99.62%
 | --------- | --------- | --------- | --------- | --------- |
 | precision | 1.000000 | 0.993789 |  0.99802 | 0.985507 |
 | recall | 0.984848 | 0.993789 | 0.99802 | 1.000000 |
-| f-1 score | 0.992366 | 0.993789 | 0.99802 | 0.992701 |
+| F1 score | 0.992366 | 0.993789 | 0.99802 | 0.992701 |
 
 Per the results, our model produces incredible accuracy and minimizes false negative results as observed through an excellent recall score for Normal labelled images. We also minimized overfitting training data by improving accuracy in testing results. 
 
